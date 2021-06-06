@@ -1,0 +1,46 @@
+@import '../Global.scss';
+
+.Gallery {
+    @extend %box;
+    @extend %flex;
+    width: 450px;
+    height: 280px;
+    margin:50px auto;
+    flex-direction: column;
+    &__title{
+        font-family: $Font2;
+        padding-bottom: 30px;
+        font-size: 1rem;
+        opacity: 0.9;
+        text-align: left;
+    }
+    &__pics {
+        padding-left: 75px;
+        display: grid;
+        grid-template-areas:"pic1 pic2 pic2"
+                            "pic1 pic3 pic4";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    .pic1 {
+        grid-area: pic1;
+        border-radius: 10px;
+    }
+    .pic2 {
+        grid-area: pic2;
+        width: 145px;
+        border-radius: 10px;
+    }
+
+    .pic3 {
+        grid-area: pic3;
+        height: 67px;
+        border-radius: 10px;
+    }
+    .pic4 {
+        grid-area: pic4;
+        height: 67px;
+        border-radius: 10px;
+    }
+}

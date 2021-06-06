@@ -1,0 +1,32 @@
+@import '../Global.scss';
+
+.Location {
+    @extend %box;
+    @extend %flex;
+    height: 90px;
+    width: 450px;
+    margin: 20px auto;
+    justify-content: center;
+    &__place {
+        @extend %flex;
+        flex-direction: column;
+        h3 {
+            font-family: $Font2;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+        p {
+            font-family: $Font2;
+            font-size: 0.8rem;
+            opacity: 0.5;
+            justify-self: left;
+        }
+    }
+    i {
+        display: block;
+		float: left;
+		padding-right: 10px;
+		font-size: 40px;
+		color: $variation-color;
+    }
+}
