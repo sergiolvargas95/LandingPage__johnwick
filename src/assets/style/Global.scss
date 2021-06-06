@@ -1,0 +1,19 @@
+$Font1: 'Lato', sans-serif;
+$Font2: 'Oswald', sans-serif;
+$primary-color: #333333;
+$clear-color: #FFFFFF;
+$secundary-color: #8841DA;
+$variation-color: #3f579a;
+
+%box{
+    border-radius: 20px;
+	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.50);
+	color: $primary-color;
+	background-color: $clear-color;
+}
+
+%flex{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}

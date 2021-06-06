@@ -1,0 +1,52 @@
+@import '../Global.scss';
+
+%flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile {
+    @extend %flex;
+    flex-direction: column;
+    margin: 25px;
+    &__avatar {
+        border-radius: 30px;
+    }
+    &__title {
+        color: $secundary-color;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 1rem;
+        font-family: $Font2;
+    }
+    &__description {
+        color: $variation-color;
+        text-transform: uppercase;
+        margin-top: 5px;
+        font-size: 0.6rem;
+        font-weight: 600;
+        font-family: $Font2;
+        opacity: 0.6;
+    }
+
+    &__btn {
+        width: 90px;
+        height: 30px;
+        font-size: $Font2;
+        margin: 30px;
+        border: none;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        background-color: $primary-color;
+        color: $clear-color;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 450ms all;
+        &:hover {
+            background-color: $variation-color;
+            color: $clear-color;
+        }
+    }
+}

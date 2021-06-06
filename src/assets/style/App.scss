@@ -1,0 +1,17 @@
+@import './Global.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $clear-color;
+    font-size: 62.5%;
+}
+
+main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}

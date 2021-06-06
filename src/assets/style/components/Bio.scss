@@ -1,0 +1,22 @@
+@import '../Global.scss';
+
+.Bio {
+    @extend %flex;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    flex-direction: column;
+    font-weight: 800;
+    text-transform: uppercase;
+    &__about {
+        color:$secundary-color;
+        font-family: $Font2;
+        padding-bottom: 10px;
+    }
+    &__description {
+        color:$variation-color;
+        font-family: $Font2;
+        padding-bottom: 10px;
+        opacity: 0.6;
+    }
+}
