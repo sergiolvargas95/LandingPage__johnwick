@@ -6,12 +6,22 @@
 }
 
 body {
-    background: $clear-color;
     font-size: 62.5%;
 }
 
-.App {
+.App__container {
+    @extend %flex;
+}
+
+.Landing {
     width: 50%;
     height: auto;
+    background: $clear-color;
+}
+
+.Desc {
+    width: 50%;
+    height: 100vh;
+    background: $primary-color;
 }
 
